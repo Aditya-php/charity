@@ -1,0 +1,59 @@
+<?php 
+/*
+	@author:Aditya
+	@param:None
+	@desc: this function is used to save the compensatation plan of the specific package for Direct commission type
+	@return:none;
+	@signature: void SaveBinaryCommision()
+*/
+function saveBinaryCommission()
+	{
+		$obj=& get_instance();
+        //////
+		$pkg_id=$obj->input->post('pkg_id');
+		//$type=$obj->input->post('type');
+		$commission=$obj->input->post('commission');
+		$level_type=$obj->input->post("level_type");
+		if($level_type=='1')
+		{
+		 $max_level=$obj->input->post("max_level");	
+		}
+		else 
+		{
+		  $max_level='';	
+		}
+		$enabled_capping=$obj->input->post("enabled_capping");
+		if($enabled_capping=='1')
+		{
+			$capping_amount=$obj->input->post("capping_amount");
+		}
+		else 
+		{
+			$capping_amount='';
+		}
+		$enabled_carry_forward=$obj->input->post("enabled_carry_forward");
+		if($enabled_carry_forward=='1')
+		{
+            $carry_forward_less_capping=$obj->input->post("carry_forward_less_capping");
+		}
+		else 
+		{
+            $carry_forward_less_capping='';
+		}
+		//////
+		$where=array('pkg_id ='=>$pkg_id);
+        $direct_commission=$obj->db->select('id')->from('binary_commission')->where($where)->get();
+        if($direct_commission->num_rows()>0)
+        {
+		//$data=array('type'=>$type,'commission'=>$commission);
+		$data=array("pkg_id"=>$pkg_id,'commission'=>$commission,'level_type'=>$level_type,'max_level'=>$max_level,'enabled_carry_forward'=>$enabled_carry_forward,"enabled_capping"=>$enabled_capping,'capping_amount'=>$capping_amount,'carry_forward_less_capping'=>$carry_forward_less_capping);
+		$obj->db->update("binary_commission",$data,$where);
+        }
+        else 
+        {
+		//$data=array("pkg_id"=>$pkg_id,'rank_id'=>$rank_id,'type'=>$type,'commission'=>$commission);
+		$data=array("pkg_id"=>$pkg_id,'commission'=>$commission,'level_type'=>$level_type,'max_level'=>$max_level,'enabled_carry_forward'=>$enabled_carry_forward,"enabled_capping"=>$enabled_capping,'capping_amount'=>$capping_amount,'carry_forward_less_capping'=>$carry_forward_less_capping);
+		$obj->db->insert("binary_commission",$data);
+        }
+	}
+?>

@@ -1,0 +1,208 @@
+/* -------- Widget Style -------- */
+
+.sidebar {
+    padding: 0 20px;
+}
+.sidebar_widget {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.sidebar_widget ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar_widget li {
+    float: left;
+    width: 100%;
+}
+.widget_archive span, .widget_categories span {
+    margin-left: 5px;
+}
+.widget_archive li a {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+.widget_archive select {
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    float: left;
+    max-width: 100%;
+    padding: 5px 10px;
+    box-shadow: none;
+    height: 35px;
+}
+.widget_archive option {
+    padding: 5px 10px;
+}
+.widget_calendar table {
+    border-collapse: collapse;
+    border-radius: 5px;
+    border-spacing: 0;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.widget_calendar caption {
+    padding: 5px;
+    text-align: left;
+}
+.widget_calendar table th, td {
+    border-color: rgba(0, 0, 0, 0.08);
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.widget_calendar table th {
+    background: #ececec none repeat scroll 0 0;
+    color: #272727;
+    font-weight: 700;
+}
+.widget_categories li a {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+.widget_categories ul li ul li {
+    text-indent: 20px;
+}
+.widget_categories ul li ul li ul li {
+    text-indent: 40px;
+}
+.widget_categories ul li ul li ul li ul li {
+    text-indent: 60px;
+}
+.widget_categories select {
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    float: left;
+    max-width: 100%;
+    padding: 5px 10px;
+    box-shadow: none;
+    height: 35px;
+}
+.widget_categories option {
+    padding: 5px 10px;
+}
+.widget_pages li a {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+.widget_pages ul li ul li {
+    text-indent: 20px;
+}
+.widget_pages ul li ul li ul li {
+    text-indent: 40px;
+}
+.widget_pages ul li ul li ul li ul li {
+    text-indent: 60px;
+}
+.widget_meta li a {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+.widget_recent_comments li {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+.widget_recent_entries li a {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+.widget_rss li {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+.widget_rss li a {
+    font-weight: 600;
+}
+.widget_rss .rss-date, .widget_rss cite {
+    display: block;
+    font-style: italic;
+}
+.widget_text select {
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    float: left;
+    max-width: 100%;
+    padding: 5px 10px;
+    box-shadow: none;
+    height: 35px;
+}
+.widget_text option {
+    padding: 5px 10px;
+}
+.tagcloud {
+    margin: 0;
+    padding: 0;
+}
+.tagcloud a {
+    border: 1px solid #e9e9e9;
+    color: #727272;
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 5px 15px;
+    font-size: 14px!important;
+}
+.tagcloud a:hover {
+    background-color: #272727;
+    color: #ffffff;
+}
+.widget_nav_menu li a {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+.widget_nav_menu ul li ul li {
+    text-indent: 20px;
+}
+.widget_nav_menu ul li ul li ul li {
+    text-indent: 40px;
+}
+.widget_nav_menu ul li ul li ul li ul li {
+    text-indent: 60px;
+}
+
+
+/* -------- Footer Widget Style -------- */
+
+.footer_widget {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.footer_widget ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.footer_widget li {
+    float: left;
+    width: 100%;
+}
+.footer_widget a {
+    color: #ffffff;
+    opacity: 0.5;
+}
+.footer_widget a:hover {
+    color: #ffffff;
+    opacity: 1;
+}
